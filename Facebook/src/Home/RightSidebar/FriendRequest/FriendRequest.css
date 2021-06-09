@@ -1,0 +1,70 @@
+.friendRequest {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  height: 80px;
+}
+.friendRequest:hover {
+  background-color: #e1e1e1;
+}
+.friendRequest__image {
+  align-self: flex-start;
+}
+#profPic {
+  width: 50px;
+  height: 50px;
+}
+
+.friendRequest__info {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  flex: 1;
+  height: 100%;
+}
+.friendRequest__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: auto;
+}
+.friendRequest__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.friendRequest__confirm {
+  background-color: #2e81f4;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  outline-style: none;
+  border: none;
+  flex: 1;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 10ms;
+}
+.friendRequest__confirm:hover {
+  transform: scale(1.03);
+}
+.friendRequest__delete {
+  background-color: #bdbdbd;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  outline-style: none;
+  border: none;
+  flex: 1;
+  cursor: pointer;
+  transition: transform 10ms;
+}
+.friendRequest__delete:hover {
+  transform: scale(1.03);
+}

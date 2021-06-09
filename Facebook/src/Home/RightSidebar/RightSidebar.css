@@ -1,0 +1,42 @@
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  flex: 0.25;
+}
+.rightSidebar__adds {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 10px;
+  flex: 0.1;
+}
+.rightSidebar__adds > h4 {
+  padding-left: 15px;
+}
+
+.rightSidebar__friendRequests {
+  padding: 10px 0px;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+}
+.rightSidebar__birthdays {
+  padding: 20px 0px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.rightSidebarBirthdays__info {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.rightSidebarBirthdays__info > h5{
+    margin-left: 5px;
+}
+.rightSidebar__contacts{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding: 10px 0px;
+}

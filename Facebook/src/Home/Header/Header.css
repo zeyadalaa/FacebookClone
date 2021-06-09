@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0px 5px 8px -9px rgb(0, 0, 0, 0.75);
+}
+.header__left {
+  display: flex;
+  flex: 0.33;
+  align-items: center;
+}
+
+.header__left > img {
+  height: 40px;
+}
+.header__input {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  background-color: #eff2f5;
+  height: fit-content;
+  width: fit-content;
+  border: 0px solid #eff2f5;
+  border-radius: 30px;
+  padding: 10px;
+}
+.header__input > input {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  outline-width: 0;
+}
+.header__center {
+  display: flex;
+  flex:0.33;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__option {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+.header__option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  border-bottom: none;
+}
+/* for controlling the css of all the material ui at one step */
+.header__option > .MuiSvgIcon-root {
+  color: gray;
+}
+.header__option:hover > .MuiSvgIcon-root {
+  color: #2e81f4;
+
+}
+
+.header__option--active > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+.header__option--active {
+  border-bottom: 4px solid#2e81f4;
+}
+.header__option--active:hover {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px ;
+  border-bottom: 4px solid#2e81f4;
+}
+
+.header__right {
+  display: flex;
+  flex:0.33 !important;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

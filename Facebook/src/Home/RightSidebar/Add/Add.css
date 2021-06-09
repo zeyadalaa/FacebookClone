@@ -1,0 +1,22 @@
+.add {
+  display: flex;
+  border-radius: 30px;
+  padding: 15px;
+  height: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.add:hover {
+  background-color: #e1e1e1;
+}
+
+.add > img{
+border-radius: 20px;
+}
+
+.add__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
