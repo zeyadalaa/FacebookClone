@@ -8,10 +8,7 @@ How will it work from a user's perspective?
 
 What services will you use to build it and how will those services work together?
 - I used aws S3 Bucket to store huge data and used  AWS Image Rekognition
-
-How will your service scale?
--will not scale
-
+- 
 where will you get it?
 - Already AWS Image Rekognition is has a dataset to train on it
 
