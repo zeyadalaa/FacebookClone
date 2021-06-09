@@ -18,6 +18,9 @@ const upload = multer({ dest: "uploads/" });
 
 const { uploadFile, getFileStream } = require("./s3");
 
+
+const imageReko = require("./image-Reko");
+
 const app = express();
 // let people = [];
 
@@ -144,7 +147,6 @@ app.post("/images", upload.single("image"), async (req, res) => {
 // console.log(data)
 
 });
-
 app.post("/posts", async (req, res) => {
     console.log("in post")
     console.log(req.body)
@@ -166,14 +168,46 @@ app.post("/posts", async (req, res) => {
       console.log(err);
     });
   } else if (req.body.act === "post") {
-    console.log("in in post ")
-
+    // console.log(req.body.img)
+    var imgLabels
+    if(req.body.img){
+      
+      console.log("here is the file called");
+      // var fun = async function test()
+      // {
+      //   return await imageReko(req.body.img)
+      // }
+      var label
+      var test =""
+      try{
+        // console.log("loooool");
+        label =await imageReko(req.body.img)
+        
+        for(var i =0;i<label.length;i++){
+          test += label[i].Name+",";
+        }
+        // label.forEach(element => {
+        // });
+        // console.log(label[0]["Name"]);
+        console.log(test);
+      }
+      catch(err){
+        console.log(err);
+      }
+      
+      
+      
+      console.log("here is the data after return function");
+      // console.log(imgLabels);
+    }
+    
     const post = new Post({
       
         content: req.body.content,
         firstName:req.body.firstName,
         lastName: req.body.lastName, 
         img: req.body.img,
+        label: test,
 
     });
     post
