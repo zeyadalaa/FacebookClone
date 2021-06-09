@@ -13,6 +13,7 @@ function Home(props) {
   const [viewAllPosts, setviewAllPosts] = useState([])
   const [firstName, setFirstName] = useState()
   const [lastName, setLastName] = useState()
+  const [label, setLabel] = useState()
   const [profPic, setprofPic] = useState()
 
     useEffect(()=>{

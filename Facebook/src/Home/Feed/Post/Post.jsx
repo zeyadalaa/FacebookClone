@@ -8,7 +8,7 @@ import NearMeOutlinedIcon from '@material-ui/icons/NearMeOutlined';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import PublicIcon from '@material-ui/icons/Public';
-function Post({profilePic, image, username, timeStamp, message}) {
+function Post({profilePic, image, username, timeStamp, message,label}) {
     return (
         <div className="post">
             <div className="post__top">
@@ -21,7 +21,8 @@ function Post({profilePic, image, username, timeStamp, message}) {
             </div>
             <div className="post__data">
             <p>{message}</p>
-
+            <br></br>
+            <p>Content in this photo is : {label}</p>
             </div>
             <div className="post__image">
                 <img src={image} alt=""/>

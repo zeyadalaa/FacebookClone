@@ -25,6 +25,7 @@ function Feed({firstName, lastName, posts}) {
             image={post.img}
             username={userName}
             message={post.content}
+            label={post.label}
             timeStamp={time}
           />
             
